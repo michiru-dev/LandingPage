@@ -5,6 +5,7 @@ import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 import WorkExperience from './sections/WorkExperience'
 import Contact from './sections/Contact'
+import Footer from '@/components/UI/Footer'
 
 function Home() {
   return (
@@ -19,11 +20,16 @@ function Home() {
           <div className='col-start-1 col-end-13'>
             <div>
               <Header />
-              <About />
-              <Projects />
-              <Skills />
-              <WorkExperience />
-              <Contact />
+              <main className='my-20 mx-auto max-w-[75rem] w-full'>
+                <div className='relative w-full max-w-[80rem] my-[0px] mx-auto'>
+                  <About />
+                  <Projects />
+                  <Skills />
+                  <WorkExperience />
+                  <Contact />
+                </div>
+              </main>
+              <Footer />
             </div>
           </div>
         </div>
