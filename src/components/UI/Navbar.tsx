@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className='sticky z-10 top-[5px] w-full my-4 px-3 rounded-full shadow-nav-bar bg-white/40 backdrop-blur border border-white border-opacity-50'>
+    <nav className='font-decol sticky z-10 top-[5px] w-full my-4 px-3 rounded-full shadow-nav-bar bg-white/40 backdrop-blur border border-white border-opacity-50'>
       <div className='relative py-3 px-1 mx-[-0.5rem] flex items-center justify-between h-16'>
         <Link href='#home' className='ml-2'>
           <FaDog className='text-3xl' />
