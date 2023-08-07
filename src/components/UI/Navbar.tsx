@@ -1,12 +1,14 @@
 import React from 'react'
 import NavbarItems from './NavbarItems'
-import { BsFillPersonFill } from 'react-icons/bs'
+import { BsFillPersonFill, BsGithub } from 'react-icons/bs'
 import { PiProjectorScreenChartDuotone } from 'react-icons/pi'
 import { GiStrong } from 'react-icons/gi'
-import { MdWorkHistory } from 'react-icons/md'
+import { MdEmail, MdWorkHistory } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
 import { FaDog } from 'react-icons/fa'
 import Link from 'next/link'
+import SnsIcon from './SnsIcon'
+import { SiWantedly } from 'react-icons/si'
 
 function Navbar() {
   return (
@@ -26,11 +28,11 @@ function Navbar() {
             hrefText={'projects'}
             svgIcon={<PiProjectorScreenChartDuotone />}
           />
-          <NavbarItems
+          {/* <NavbarItems
             text={'スキル'}
             hrefText={'skills'}
             svgIcon={<GiStrong />}
-          />
+          /> */}
           <NavbarItems
             text={'経歴'}
             hrefText={'workExperience'}
@@ -40,6 +42,24 @@ function Navbar() {
             text={'コンタクト'}
             hrefText={'contact'}
             svgIcon={<HiOutlineMail />}
+          />
+        </div>
+
+        <div className='flex items-center justify-start gap-[1.2rem] '>
+          <SnsIcon
+            svgIcon={<BsGithub size={25} />}
+            snsName='GitHub'
+            url='https://github.com/michiru-dev'
+          />
+          <SnsIcon
+            svgIcon={<SiWantedly size={25} />}
+            snsName='Wantedly'
+            url='https://www.wantedly.com/id/michiru_dev'
+          />
+          <SnsIcon
+            svgIcon={<MdEmail size={25} />}
+            snsName='e-mail'
+            url='mailto:since_l999@yahoo.co.jp'
           />
         </div>
       </div>
