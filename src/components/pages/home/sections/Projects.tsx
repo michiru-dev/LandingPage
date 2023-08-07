@@ -4,7 +4,7 @@ import { projectsList } from '@/const/projects'
 
 function Projects() {
   return (
-    <section id='projects' className='mt-[1rem]'>
+    <section id='projects' className='mt-[1rem] mb-20'>
       <h1 className='text-2xl font-bold font-decol'>プロジェクト</h1>
       {projectsList.map((project: any, index: number) => {
         const isEven = index % 2 === 0
