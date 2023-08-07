@@ -32,6 +32,7 @@ module.exports = {
         decol: ['Kaisei Decol', 'serif'],
         mplus: ['M PLUS Rounded 1c', 'sans-serif'],
         zen: ['Zen Kaku Gothic New', 'sans-serif'],
+        syne: ['Syne', 'sans-serif'],
       },
     },
   },

@@ -3,7 +3,7 @@ import Link from 'next/link'
 export const projectsList = [
   {
     title: 'ショッピングサイト',
-    skills: ['React', 'Next.js', 'Redux', 'Typescript'],
+    skills: ['React.js', 'Next.js', 'Redux', 'Typescript'],
     description: (
       <p>
         Next.jsで実装したシンプルなショッピングサイトです。
@@ -22,10 +22,10 @@ export const projectsList = [
   },
   {
     title: '人事管理アプリ',
-    skills: ['React', 'Redux', 'SCSS', 'Cloud Firestore'],
+    skills: ['React.js', 'Redux', 'SCSS', 'Cloud Firestore'],
     description: (
       <p>
-        Reactで実装した社員情報を登録、閲覧、検索、編集できる人事管理アプリです。
+        React.jsで実装した社員情報を登録、閲覧、検索、編集できる人事管理アプリです。
         <br />
         データの管理はReduxおよびCloud Firestoreを使い実装しています。
         <br />
@@ -49,10 +49,10 @@ export const projectsList = [
   },
   {
     title: 'ニュースアプリ',
-    skills: ['React', 'Typescript', 'Node.js', 'Express'],
+    skills: ['React.js', 'Typescript', 'Node.js', 'Express'],
     description: (
       <p>
-        Reactで実装したニュースフィードアプリです。フリーAPIからニュースデータを取得し、表示しています。このAPIとの繋ぎ込みのため、Node.js/Expressを使いバックエンドも実装しています。
+        React.jsで実装したニュースフィードアプリです。フリーAPIからニュースデータを取得し、表示しています。このAPIとの繋ぎ込みのため、Node.js/Expressを使いバックエンドも実装しています。
         <br />
         苦戦したのはドロップダウンメニューのスタイルです。ホバーされた時の挙動が思うようにいかず、
       </p>
@@ -63,10 +63,10 @@ export const projectsList = [
   },
   {
     title: '国旗クイズアプリ',
-    skills: ['React', 'Typescript', 'SCSS'],
+    skills: ['React.js', 'Typescript', 'SCSS'],
     description: (
       <p>
-        Reactで実装した4択の国旗当てゲームです。フリーAPIから国旗関連の情報を取得しランダムに問題が出題されるよう構成しています。
+        React.jsで実装した4択の国旗当てゲームです。フリーAPIから国旗関連の情報を取得しランダムに問題が出題されるよう構成しています。
       </p>
     ),
     src: 'flagQuizApp',

@@ -1,6 +1,5 @@
 import Project from '@/components/UI/Project'
 import React from 'react'
-import Image from 'next/image'
 import { projectsList } from '@/const/projects'
 
 function Projects() {
