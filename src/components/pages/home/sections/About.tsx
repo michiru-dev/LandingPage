@@ -8,12 +8,12 @@ import TechSkills from '@/components/UI/TechSkills'
 
 function About() {
   return (
-    <section className='mb-20 mt-[-1rem] flex font-zen gap-[100px]' id='about'>
+    <section className='mb-40 mt-[-1rem] flex font-zen gap-[100px]' id='about'>
       <div className='grow'>
         <h1 className='text-2xl font-decol font-bold'>自己紹介</h1>
 
         <div className='text-base mb-5'>
-          　こんにちは！ミチルと申します。
+          　こんにちは！みちると申します。
           1994年鹿児島県で生まれ幼少期を過ごしました。
           高校時は3年間カナダへ単身留学し現地の公立高校を卒業、その後帰国し関西学院大学へ進学しました。
           大学卒業後は、専門商社の人事採用担当として5年半勤務しました。
@@ -58,8 +58,13 @@ function About() {
         </div> */}
       </div>
 
-      <div className='relative max-w-[100%] h-[400px] min-w-[400px]'>
-        <Image src='/hokori.jpg' alt='profilePic' layout='fill' />
+      <div className='relative max-w-[100%] h-[450px] min-w-[450px]'>
+        <Image
+          src='/profile.png'
+          alt='profilePic'
+          layout='fill'
+          className='drop-shadow-2xl'
+        />
       </div>
     </section>
   )
