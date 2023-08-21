@@ -40,7 +40,6 @@ function ProjectDetails({ project }: { project: any }) {
           )
         })}
       </div>
-      <p className='text-base whitespace-pre-wrap'>{project.description}</p>
     </div>
   )
 }

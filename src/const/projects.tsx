@@ -7,12 +7,10 @@ export const projectsList = [
     description: (
       <p>
         Next.jsで実装したシンプルなショッピングサイトです。
-        <br />
         商品一覧、商品詳細、カート、支払いページの4画面で構成しています。
-        <br />
         商品一覧ページと商品詳細ページはSSGで実装しています。
-        <br />
         カートのアイテムはReduxで管理しています。
+        <br />
         支払いページでは任意の数字を入力し進めてください。
       </p>
     ),
@@ -26,9 +24,7 @@ export const projectsList = [
     description: (
       <p>
         React.jsで実装した社員情報を登録、閲覧、検索、編集できる人事管理アプリです。
-        <br />
         データの管理はReduxおよびCloud Firestoreを使い実装しています。
-        <br />
         また、Cloud Firestoreの代わりにMySQLを使い書き換えたバージョンも
         <Link
           className='font-bold'
@@ -53,7 +49,6 @@ export const projectsList = [
     description: (
       <p>
         React.jsで実装したニュースフィードアプリです。フリーAPIからニュースデータを取得し、表示しています。このAPIとの繋ぎ込みのため、Node.js/Expressを使いバックエンドも実装しています。
-        <br />
         苦戦したのはドロップダウンメニューのスタイルです。ホバーされた時の挙動が思うようにいかず、
       </p>
     ),

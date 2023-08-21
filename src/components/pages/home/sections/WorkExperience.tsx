@@ -2,7 +2,7 @@ import React from 'react'
 
 function WorkExperience() {
   return (
-    <section id='workExperience'>
+    <section id='workExperience' className='mb-20'>
       <h1 className='text-2xl font-decol font-bold mb-2'>経歴</h1>
       <div className='flex justify-between font-kaisei'>
         <div>

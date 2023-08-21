@@ -14,7 +14,7 @@ function TechSkills({
   return (
     <div className='flex'>
       <div className='flex flex-wrap gap-3 mb-3'>
-        <div className='w-fit'>{categoryJp}:</div>
+        {/* <div className='w-fit'>{categoryJp}:</div> */}
         {techSkills[category].map((item: any) => {
           return (
             <div
