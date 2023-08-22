@@ -22,8 +22,8 @@ function Home() {
               <main className='my-20 mx-auto max-w-[75rem] w-full'>
                 <div className='relative w-full max-w-[80rem] my-[0px] mx-auto'>
                   <About />
-                  <Projects />
                   <WorkExperience />
+                  <Projects />
                   <Contact />
                 </div>
               </main>

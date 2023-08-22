@@ -2,7 +2,6 @@ import React from 'react'
 import NavbarItems from './NavbarItems'
 import { BsFillPersonFill, BsGithub } from 'react-icons/bs'
 import { PiProjectorScreenChartDuotone } from 'react-icons/pi'
-import { GiStrong } from 'react-icons/gi'
 import { MdEmail, MdWorkHistory } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
 import { FaDog } from 'react-icons/fa'
@@ -27,15 +26,16 @@ function Navbar() {
             svgIcon={<BsFillPersonFill />}
           />
           <NavbarItems
-            text={'プロジェクト'}
-            hrefText={'projects'}
-            svgIcon={<PiProjectorScreenChartDuotone />}
-          />
-          <NavbarItems
             text={'経歴'}
             hrefText={'workExperience'}
             svgIcon={<MdWorkHistory />}
           />
+          <NavbarItems
+            text={'プロジェクト'}
+            hrefText={'projects'}
+            svgIcon={<PiProjectorScreenChartDuotone />}
+          />
+
           <NavbarItems
             text={'コンタクト'}
             hrefText={'contact'}

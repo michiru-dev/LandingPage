@@ -1,16 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-// import SnsIcon from '@/components/UI/SnsIcon'
-// import { SiWantedly } from 'react-icons/si'
-// import { MdEmail } from 'react-icons/md'
-// import { BsGithub } from 'react-icons/bs'
 import TechSkills from '@/components/UI/TechSkills'
 
 function About() {
   return (
-    <section className='mb-40 mt-[-1rem] flex font-zen gap-[100px]' id='about'>
+    <section
+      className='mb-40 flex font-zen gap-[100px] pt-[80px] mt-[-80px]'
+      id='about'
+    >
       <div className='grow'>
-        <h1 className='text-2xl font-decol font-bold'>自己紹介</h1>
+        <h1 className='text-2xl font-decol font-bold mb-2'>自己紹介</h1>
 
         <div className='text-base mb-5'>
           　こんにちは！みちると申します。
@@ -25,7 +24,7 @@ function About() {
         </div>
 
         <div>
-          <h1 className='text-xl font-bold font-decol'>スキル</h1>
+          <h1 className='text-xl font-bold font-decol mb-2'>スキル</h1>
 
           <TechSkills category='languages' categoryJp='言語' />
 
@@ -38,24 +37,6 @@ function About() {
 
           <TechSkills category='others' categoryJp='その他' />
         </div>
-
-        {/* <div className='flex items-center justify-start gap-[1.2rem] w-[100%] mt-[1rem]'>
-          <SnsIcon
-            svgIcon={<BsGithub size={25} />}
-            snsName='GitHub'
-            url='https://github.com/michiru-dev'
-          />
-          <SnsIcon
-            svgIcon={<SiWantedly size={25} />}
-            snsName='Wantedly'
-            url='https://www.wantedly.com/id/michiru_dev'
-          />
-          <SnsIcon
-            svgIcon={<MdEmail size={25} />}
-            snsName='e-mail'
-            url='mailto:since_l999@yahoo.co.jp'
-          />
-        </div> */}
       </div>
 
       <div className='relative max-w-[100%] h-[450px] min-w-[450px]'>
