@@ -3,7 +3,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section>
+    <section id='contact' className='pt-[80px] mt-[-80px]'>
       <h1 className='text-2xl font-decol font-bold mb-2'>コンタクト</h1>
 
       <div>

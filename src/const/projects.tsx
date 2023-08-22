@@ -6,7 +6,7 @@ export const projectsList = [
     skills: ['React.js', 'Next.js', 'Redux', 'Typescript'],
     description: (
       <p>
-        Next.jsで実装したシンプルなショッピングサイトです。
+        Next.jsで実装したショッピングサイトです。
         商品一覧、商品詳細、カート、支払いページの4画面で構成しています。
         商品一覧ページと商品詳細ページはSSGで実装しています。
         カートのアイテムはReduxで管理しています。
@@ -34,7 +34,7 @@ export const projectsList = [
         >
           こちら
         </Link>
-        に置いています。（デプロイはしていません）
+        に置いています。（未デプロイ）
         <br />
         ダミーデータを登録しているので、自由に追加や編集等行ってください。
       </p>
@@ -48,8 +48,9 @@ export const projectsList = [
     skills: ['React.js', 'Typescript', 'Node.js', 'Express'],
     description: (
       <p>
-        React.jsで実装したニュースフィードアプリです。フリーAPIからニュースデータを取得し、表示しています。このAPIとの繋ぎ込みのため、Node.js/Expressを使いバックエンドも実装しています。
-        苦戦したのはドロップダウンメニューのスタイルです。ホバーされた時の挙動が思うようにいかず、
+        React.jsで実装したニュースフィードアプリです。フリーAPIからニュースデータを取得し、表示しています。
+        <br />
+        このAPIとの繋ぎ込みのため、Node.js/Expressを使いバックエンドも実装しています。
       </p>
     ),
     src: 'newspp',
@@ -62,6 +63,8 @@ export const projectsList = [
     description: (
       <p>
         React.jsで実装した4択の国旗当てゲームです。フリーAPIから国旗関連の情報を取得しランダムに問題が出題されるよう構成しています。
+        <br />
+        トップページ、問題出題ページ、結果ページの3画面構成です。ゲームの進捗を表すプログレスバーも実装しています。
       </p>
     ),
     src: 'flagQuizApp',

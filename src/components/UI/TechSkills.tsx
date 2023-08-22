@@ -6,7 +6,6 @@ type CategoryProps = 'languages' | 'frameworks' | 'databases' | 'others'
 
 function TechSkills({
   category,
-  categoryJp,
 }: {
   category: CategoryProps
   categoryJp: string
@@ -14,7 +13,6 @@ function TechSkills({
   return (
     <div className='flex'>
       <div className='flex flex-wrap gap-3 mb-3'>
-        {/* <div className='w-fit'>{categoryJp}:</div> */}
         {techSkills[category].map((item: any) => {
           return (
             <div

@@ -3,7 +3,9 @@ import React from 'react'
 function Footer() {
   return (
     <>
-      <footer>© 2023 Michiru.I</footer>
+      <footer className='absolute left-[50%] translate-x-[-50%]'>
+        © 2023 Michiru.I
+      </footer>
     </>
   )
 }
