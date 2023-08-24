@@ -9,7 +9,13 @@ type SnsIconProps = {
 
 function SnsIcon({ svgIcon, snsName, url }: SnsIconProps) {
   return (
-    <Link href={url} title={snsName} rel='noreferrer noopener' target='_blank'>
+    <Link
+      href={url}
+      title={snsName}
+      rel='noreferrer noopener'
+      target='_blank'
+      className='text-xl'
+    >
       {svgIcon}
     </Link>
   )

@@ -9,8 +9,11 @@ import Footer from '@/components/UI/Footer'
 function Home() {
   return (
     <div>
-      <section className='grid grid-cols-outer gap-y-36' id='home'>
-        <div className='col-2-auto grid grid-cols-inner gap-12 grid-flow-dense'>
+      <section
+        className='grid grid-cols-outerTb lg:grid-cols-outerPc gap-y-36'
+        id='home'
+      >
+        <div className='col-2-auto grid grid-cols-inner grid-flow-dense'>
           <div className='col-start-1 col-end-13'>
             <div>
               <Header />

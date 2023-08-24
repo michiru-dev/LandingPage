@@ -5,7 +5,7 @@ import { AiOutlineLink } from 'react-icons/ai'
 
 function ProjectDetails({ project }: { project: any }) {
   return (
-    <div>
+    <div className='px-[10px]'>
       <div className='flex align-center font-decol gap-4'>
         <h2 className='text-xl font-bold'>{project.title}</h2>
         <div className='flex gap-2'>
@@ -27,7 +27,7 @@ function ProjectDetails({ project }: { project: any }) {
           </Link>
         </div>
       </div>
-      <div className='flex gap-2 mt-2 mb-5'>
+      <div className='flex gap-2 mt-2 mb-5 flex-wrap'>
         {project.skills.map((skill: string, index: number) => {
           return (
             <div

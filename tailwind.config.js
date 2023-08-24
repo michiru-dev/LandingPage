@@ -16,7 +16,8 @@ module.exports = {
         'nav-bar': '0 4px 30px rgba(0, 0, 0, 0.1)',
       },
       gridTemplateColumns: {
-        outer: 'minmax(6rem, auto) minmax(0px, 78rem) minmax(6rem, auto)',
+        outerPc: 'minmax(6rem, auto) minmax(0px, 78rem) minmax(6rem, auto)',
+        outerTb: 'minmax(2rem, auto) minmax(0px, 78rem) minmax(2rem, auto)',
         inner: 'repeat(12, 1fr)',
       },
       gridColumn: {
