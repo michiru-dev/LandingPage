@@ -5,13 +5,11 @@ export const projectsList = [
     title: 'ショッピングサイト',
     skills: ['React.js', 'Next.js', 'Redux', 'Typescript'],
     description: (
-      <p>
-        Next.jsで実装したショッピングサイトです。
-        商品一覧、商品詳細、カート、支払いページの4画面で構成しています。
+      <p className=' whitespace-pre-wrap'>
+        {`Next.jsで実装したショッピングサイトです。\n商品一覧、商品詳細、カート、支払いページの4画面で構成しています。
         商品一覧ページと商品詳細ページはSSGで実装しています。
         カートのアイテムはReduxで管理しています。
-        <br />
-        支払いページでは任意の数字を入力し進めてください。
+        支払いページでは任意の数字を入力し進めてください。`}
       </p>
     ),
     src: 'ecサイト',
