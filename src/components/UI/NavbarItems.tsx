@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { hoverFlowClass } from './Navbar'
+import { hoverFlowClass } from './NavbarContents'
 
 type NavbarItemsProps = {
   svgIcon: React.ReactElement
