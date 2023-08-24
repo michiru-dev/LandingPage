@@ -50,9 +50,7 @@ function NavbarContents({
         />
       </div>
 
-      <ul
-        className={`${itemClassName} hidden lg:flex items-center justify-start gap-[1.2rem] mr-3`}
-      >
+      <ul className='hidden lg:flex items-center justify-start gap-[1.2rem] mr-3'>
         <li className={hoverFlowClass}>
           <SnsIcon
             svgIcon={<BsGithub size={25} />}
