@@ -14,7 +14,7 @@ function Contact() {
           </Link>
           のメールアドレスにご連絡ください。
         </p>
-        <SnsIcons showOrHiddenClassName='' />
+        <SnsIcons />
       </div>
     </section>
   )

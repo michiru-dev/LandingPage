@@ -8,7 +8,7 @@ import { hoverFlowClass } from './NavbarContents'
 function SnsIcons({
   showOrHiddenClassName,
 }: {
-  showOrHiddenClassName: string
+  showOrHiddenClassName?: string
 }) {
   return (
     <ul
