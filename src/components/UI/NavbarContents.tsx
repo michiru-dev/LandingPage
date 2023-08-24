@@ -2,12 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 import { FaDog } from 'react-icons/fa'
 import NavbarItems from './NavbarItems'
-import { BsFillPersonFill, BsGithub } from 'react-icons/bs'
-import { MdEmail, MdWorkHistory } from 'react-icons/md'
 import { PiProjectorScreenChartDuotone } from 'react-icons/pi'
 import { HiOutlineMail } from 'react-icons/hi'
-import SnsIcon from './SnsIcon'
-import { SiWantedly } from 'react-icons/si'
+import { BsFillPersonFill } from 'react-icons/bs'
+import { MdWorkHistory } from 'react-icons/md'
+import SnsIcons from './SnsIcons'
 
 export const hoverFlowClass =
   'transform hover:translate-y-[-0.25rem] duration-[0.3s]'
@@ -49,32 +48,7 @@ function NavbarContents({
           svgIcon={<HiOutlineMail />}
         />
       </div>
-
-      <ul className='hidden lg:flex items-center justify-start gap-[1.2rem] mr-3'>
-        <li className={hoverFlowClass}>
-          <SnsIcon
-            svgIcon={<BsGithub size={25} />}
-            snsName='GitHub'
-            url='https://github.com/michiru-dev'
-          />
-        </li>
-
-        <li className={hoverFlowClass}>
-          <SnsIcon
-            svgIcon={<SiWantedly size={25} />}
-            snsName='Wantedly'
-            url='https://www.wantedly.com/id/michiru_dev'
-          />
-        </li>
-
-        <li className={hoverFlowClass}>
-          <SnsIcon
-            svgIcon={<MdEmail size={25} />}
-            snsName='e-mail'
-            url='mailto:since_l999@yahoo.co.jp'
-          />
-        </li>
-      </ul>
+      <SnsIcons showOrHiddenClassName='hidden' />
     </div>
   )
 }

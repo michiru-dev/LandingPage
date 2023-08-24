@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import NavbarContents from './NavbarContents'
 import { RxHamburgerMenu } from 'react-icons/rx'
 
-export const hoverFlowClass =
-  'transform hover:translate-y-[-0.25rem] duration-[0.3s]'
-
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const toggleMenu = () => {
