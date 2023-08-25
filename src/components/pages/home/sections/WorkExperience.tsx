@@ -15,7 +15,7 @@ function WorkExperience() {
       <div className='flex flex-col lg:flex-row justify-between font-kaisei'>
         {workExperience.map((ex, index) => {
           return (
-            <>
+            <div key={index}>
               <div className='mb-5 lg:mb-0'>
                 <p className='border-b-[1px] w-fit font-decol'>{ex.date}</p>
                 <p> {ex.name}</p>
@@ -25,7 +25,7 @@ function WorkExperience() {
                   <div className={dotLineInnerDivClass} />
                 </div>
               )}
-            </>
+            </div>
           )
         })}
       </div>
