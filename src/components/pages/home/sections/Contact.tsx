@@ -1,4 +1,5 @@
 import SnsIcons from '@/components/UI/SnsIcons'
+import { contactText } from '@/const/contactText'
 import { contents } from '@/const/contents'
 import Link from 'next/link'
 import React from 'react'
@@ -12,10 +13,10 @@ function Contact() {
 
       <div>
         <p className='mb-3'>
-          <Link className='font-bold' href='mailto:since_l999@yahoo.co.jp'>
-            こちら
+          <Link className='font-bold' href={`mailto:${contactText.link.email}`}>
+            {contactText.link.text}
           </Link>
-          のメールアドレスにご連絡ください。
+          {contactText.text}
         </p>
         <SnsIcons />
       </div>
