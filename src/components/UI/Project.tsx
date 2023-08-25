@@ -23,3 +23,14 @@ function Project({ project }: { project: any }) {
 }
 
 export default Project
+
+{
+  /* <Link
+className='font-bold'
+rel='noreferrer noopener'
+target='_blank'
+href='https://github.com/michiru-dev/HR-App-MySQL'
+>
+こちら
+</Link> */
+}

@@ -1,11 +1,14 @@
 import SnsIcons from '@/components/UI/SnsIcons'
+import { contents } from '@/const/contents'
 import Link from 'next/link'
 import React from 'react'
 
 function Contact() {
   return (
     <section id='contact' className='pt-[80px] mt-[-80px]'>
-      <h1 className='text-2xl font-decol font-bold mb-2'>コンタクト</h1>
+      <h1 className='text-2xl font-decol font-bold mb-2'>
+        {contents.contact.jp}
+      </h1>
 
       <div>
         <p className='mb-3'>

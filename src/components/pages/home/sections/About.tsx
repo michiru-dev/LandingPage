@@ -2,11 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import TechSkills from '@/components/UI/TechSkills'
 import { aboutMe } from '@/const/aboutMe'
+import { contents } from '@/const/contents'
 
 function About() {
   return (
-    <section className='mb-40 font-zen pt-[80px] mt-[-80px]' id='about'>
-      <h1 className='text-2xl font-decol font-bold mb-2'>自己紹介</h1>
+    <section className='mb-40 font-zen pt-[80px] mt-[-80px]' id='aboutMe'>
+      <h1 className='text-2xl font-decol font-bold mb-2'>
+        {contents.aboutMe.jp}
+      </h1>
 
       <div className='clearfix lg:flex lg:flex-row-reverse lg:gap-[74px]'>
         <div
@@ -22,7 +25,7 @@ function About() {
         </div>
 
         <div className='lg:grow'>
-          <div className='text-base mb-10'>{aboutMe}</div>
+          <div className='text-base mb-10 whitespace-pre-wrap'>{aboutMe}</div>
 
           <div>
             <h1 className='text-xl font-bold font-decol mb-2'>スキル</h1>
