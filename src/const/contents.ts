@@ -4,7 +4,7 @@ import { BsFillPersonFill } from 'react-icons/bs'
 import { MdWorkHistory } from 'react-icons/md'
 
 export const contents = {
-  aboutMe: { jp: '自己紹介', en: 'about', IconComponent: BsFillPersonFill },
+  aboutMe: { jp: '自己紹介', en: 'aboutMe', IconComponent: BsFillPersonFill },
   workExperience: {
     jp: '経歴',
     en: 'workExperience',
