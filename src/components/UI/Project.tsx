@@ -1,8 +1,13 @@
 import React from 'react'
 import ProjectGifLink from './ProjectGifLink'
 import ProjectDetails from './ProjectDetails'
+import DOMPurify from 'isomorphic-dompurify'
 
 function Project({ project }: { project: any }) {
+  const config = {
+    ALLOWED_ATTR: ['class', 'href', 'target', 'rel'],
+  }
+  const sanitizedHTML = DOMPurify.sanitize(project.description, config)
   return (
     <div
       className='inline-block lg:mr-4 lg:w-[800px] lg:h-[580px] transition-all ease-in duration-300 cursor-pointer top-0 lg:pr-8 lg:pl-8 
@@ -14,23 +19,13 @@ function Project({ project }: { project: any }) {
           <ProjectGifLink project={project} />
         </div>
 
-        <div className='text-sm lg:text-base whitespace-pre-wrap mx-[10px] lg:mx-0'>
-          {project.description}
-        </div>
+        <p
+          className='text-sm lg:text-base whitespace-pre-wrap mx-[10px] lg:mx-0'
+          dangerouslySetInnerHTML={{ __html: sanitizedHTML }}
+        ></p>
       </div>
     </div>
   )
 }
 
 export default Project
-
-{
-  /* <Link
-className='font-bold'
-rel='noreferrer noopener'
-target='_blank'
-href='https://github.com/michiru-dev/HR-App-MySQL'
->
-こちら
-</Link> */
-}
