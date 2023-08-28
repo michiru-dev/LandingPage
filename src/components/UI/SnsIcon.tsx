@@ -1,11 +1,6 @@
+import { SnsIconProps } from '@/types/navbarTypes'
 import Link from 'next/link'
 import React from 'react'
-
-type SnsIconProps = {
-  svgIcon: React.ReactElement
-  snsName: string
-  url: string
-}
 
 function SnsIcon({ svgIcon, snsName, url }: SnsIconProps) {
   return (
