@@ -1,16 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 import { hoverFlowClass } from './NavbarContents'
-
-type NavbarItemsProps = {
-  svgIcon: React.ReactElement
-  text: string
-  hrefText: string
-}
+import { NavbarItemsProps } from '@/types/navbarTypes'
 
 function NavbarItems({ svgIcon, text, hrefText }: NavbarItemsProps) {
   return (
-    <div className={hoverFlowClass}>
+    <div className={`${hoverFlowClass} pb-3 lg:pb-0`}>
       <Link href={`#${hrefText}`} className='flex items-center'>
         {svgIcon}
         {text}

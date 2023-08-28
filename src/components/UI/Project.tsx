@@ -2,8 +2,9 @@ import React from 'react'
 import ProjectGifLink from './ProjectGifLink'
 import ProjectDetails from './ProjectDetails'
 import DOMPurify from 'isomorphic-dompurify'
+import { ProjectListProps } from '@/types/projectTypes'
 
-function Project({ project }: { project: any }) {
+function Project({ project }: { project: ProjectListProps }) {
   const config = {
     ALLOWED_ATTR: ['class', 'href', 'target', 'rel'],
   }

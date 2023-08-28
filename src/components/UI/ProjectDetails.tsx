@@ -2,8 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 import { BsGithub } from 'react-icons/bs'
 import { AiOutlineLink } from 'react-icons/ai'
+import { ProjectListProps } from '@/types/projectTypes'
 
-function ProjectDetails({ project }: { project: any }) {
+function ProjectDetails({ project }: { project: ProjectListProps }) {
   return (
     <div className='px-[10px]'>
       <div className='flex align-center font-decol gap-4'>

@@ -12,7 +12,7 @@ function NavbarContents({
   divClassName,
   itemClassName,
 }: {
-  divClassName: string
+  divClassName?: string
   itemClassName: string
 }) {
   const contentsArray = Object.values(contents)
@@ -23,7 +23,7 @@ function NavbarContents({
         <FaDog className='text-xl lg:text-3xl' />
       </Link>
       <div
-        className={`${itemClassName} flex justify-center  flex-grow ml-4 gap-x-3 md:gap-x-5 lg:gap-x-10 text-[11px] md:text-[13px] lg:text-[17px]`}
+        className={`${itemClassName} flex justify-center flex-grow ml-4 gap-x-3 md:gap-x-5 lg:gap-x-10 text-[11px] md:text-[13px] lg:text-[17px]`}
       >
         {contentsArray.map(({ jp, en, IconComponent }) => {
           return (

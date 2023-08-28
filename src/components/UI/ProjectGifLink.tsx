@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { ProjectListProps } from '@/types/projectTypes'
 
-function ProjectGifLink({ project }: { project: any }) {
+function ProjectGifLink({ project }: { project: ProjectListProps }) {
   return (
     <Link
       href={project.url}

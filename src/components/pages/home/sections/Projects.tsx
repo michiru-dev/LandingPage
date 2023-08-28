@@ -2,6 +2,7 @@ import Project from '@/components/UI/Project'
 import React from 'react'
 import { projectsList } from '@/const/projects'
 import { contents } from '@/const/contents'
+import { ProjectListProps } from '@/types/projectTypes'
 
 function Projects() {
   return (
@@ -10,7 +11,7 @@ function Projects() {
         {contents.projects.jp}
       </h1>
       <div className='flex flex-col lg:block lg:overflow-x-scroll whitespace-nowrap '>
-        {projectsList.map((project: any) => {
+        {projectsList.map((project: ProjectListProps) => {
           return <Project key={project.title} project={project} />
         })}
       </div>
