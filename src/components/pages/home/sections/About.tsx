@@ -30,16 +30,13 @@ function About() {
           <div>
             <h1 className='text-xl font-bold font-decol mb-2'>スキル</h1>
 
-            <TechSkills category='languages' categoryJp='言語' />
+            <TechSkills category='languages' />
 
-            <TechSkills
-              category='frameworks'
-              categoryJp='フレームワーク・ライブラリ'
-            />
+            <TechSkills category='frameworks' />
 
-            <TechSkills category='databases' categoryJp='データベース' />
+            <TechSkills category='databases' />
 
-            <TechSkills category='others' categoryJp='その他' />
+            <TechSkills category='others' />
           </div>
         </div>
       </div>
