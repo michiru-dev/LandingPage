@@ -1,18 +1,17 @@
-import { TechSkillType } from '@/types/techSkillsTypes'
 import React from 'react'
-import Image from 'next/image'
+import TechSkills from './TechSkills'
+import { techSkills } from '@/const/skills'
+import { CategoryType } from '@/types/techSkillsTypes'
 
-function Skills({ name, icon, className }: TechSkillType) {
+function Skills() {
+  const cateogoryArr = Object.keys(techSkills) as CategoryType[]
+
   return (
-    <div
-      className={`${className} flex gap-1 justify-center items-center align-middle px-3 font-syne font-medium w-fit rounded-full  
-text-md shadow-md text-black border border-white bg-white/20`}
-      key={name}
-    >
-      {typeof icon !== 'undefined' && (
-        <Image src={icon} width={18} height={18} alt={name} />
-      )}
-      <p>{name}</p>
+    <div>
+      <h1 className='text-xl font-bold font-decol mb-2'>スキル</h1>
+      {cateogoryArr.map((category) => (
+        <TechSkills key={category} category={techSkills[category]} />
+      ))}
     </div>
   )
 }

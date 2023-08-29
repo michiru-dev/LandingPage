@@ -1,15 +1,12 @@
 import React from 'react'
 import ProjectGifLink from './ProjectGifLink'
 import ProjectDetails from './ProjectDetails'
-import DOMPurify from 'isomorphic-dompurify'
+
 import { ProjectListProps } from '@/types/projectTypes'
+import { sanitizer } from '@/const/sanitizer'
 
 function Project({ project }: { project: ProjectListProps }) {
-  const config = {
-    ALLOWED_ATTR: ['class', 'href', 'target', 'rel'],
-  }
-  const sanitizedHTML = DOMPurify.sanitize(project.description, config)
-  //上記を関数か、descriptionをわたす
+  const sanitizedHTML = sanitizer(project.description)
 
   return (
     <div

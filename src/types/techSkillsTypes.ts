@@ -1,7 +1,9 @@
-export type CategoryType = 'languages' | 'frameworks' | 'databases' | 'others'
+import type { TechSkills } from '@/const/skills'
+
+export type CategoryType = keyof TechSkills
 
 export type TechSkillType = {
-  name: string
-  icon?: string
+  name: TechSkills[CategoryType][number]['name']
+  icon?: TechSkills[CategoryType][number]['icon']
   className?: string
 }

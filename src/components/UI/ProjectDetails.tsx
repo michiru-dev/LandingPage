@@ -3,7 +3,7 @@ import React from 'react'
 import { BsGithub } from 'react-icons/bs'
 import { AiOutlineLink } from 'react-icons/ai'
 import { ProjectListProps } from '@/types/projectTypes'
-import Skills from './Skills'
+import Skills from './SkillIconsSet'
 
 function ProjectDetails({ project }: { project: ProjectListProps }) {
   return (
