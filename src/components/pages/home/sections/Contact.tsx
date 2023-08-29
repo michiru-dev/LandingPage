@@ -11,7 +11,7 @@ function Contact() {
     <Section id='contact'>
       <SectionTitle title={contents.contact.jp} />
       <div>
-        <p className='mb-3'>
+        <p className='mb-6'>
           <Link className='font-bold' href={`mailto:${contactText.link.email}`}>
             {contactText.link.text}
           </Link>

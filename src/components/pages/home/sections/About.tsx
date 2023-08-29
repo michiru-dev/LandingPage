@@ -13,7 +13,7 @@ function About() {
       <div className='clearfix lg:flex lg:flex-row-reverse lg:gap-[74px]'>
         <div
           style={{ shapeOutside: 'circle()', clipPath: 'circle()' }}
-          className='float-right lg:float-none relative h-[200px] min-w-[200px] lg:h-[450px] lg:min-w-[450px] mb-8 lg:mb-0 ml-8'
+          className='float-none min-[425px]:float-right lg:float-none relative h-[200px] w-[200px] lg:h-[450px] lg:min-w-[450px] mb-8 lg:mb-0 ml-8'
         >
           <Image
             src={profilePic.src}
