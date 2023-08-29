@@ -9,6 +9,8 @@ function Project({ project }: { project: ProjectListProps }) {
     ALLOWED_ATTR: ['class', 'href', 'target', 'rel'],
   }
   const sanitizedHTML = DOMPurify.sanitize(project.description, config)
+  //上記を関数か、descriptionをわたす
+
   return (
     <div
       className='inline-block lg:mr-4 lg:w-[800px] lg:h-[580px] transition-all ease-in duration-300 cursor-pointer top-0 lg:pr-8 lg:pl-8 

@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md'
 import { hoverFlowClass } from './NavbarContents'
 
 function SnsIcons({
-  showOrHiddenClassName,
+  showOrHiddenClassName = '',
 }: {
   showOrHiddenClassName?: string
 }) {

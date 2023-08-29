@@ -2,7 +2,7 @@ import Header from '@/components/UI/Header'
 import React from 'react'
 import About from './sections/About'
 import Projects from './sections/Projects'
-import WorkExperience from './sections/WorkExperience'
+import WorkExperience from './sections/WorkExperiences'
 import Contact from './sections/Contact'
 import Footer from '@/components/UI/Footer'
 
