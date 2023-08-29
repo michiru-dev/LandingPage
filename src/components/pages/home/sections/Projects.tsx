@@ -3,10 +3,11 @@ import React from 'react'
 import { projectsList } from '@/const/projects'
 import { contents } from '@/const/contents'
 import { ProjectListProps } from '@/types/projectTypes'
+import Section from '@/components/UI/Section'
 
 function Projects() {
   return (
-    <section id='projects' className='mb-40 pt-[80px] mt-[-80px]'>
+    <Section id='projects'>
       <h1 className='text-2xl font-bold font-decol mb-6'>
         {contents.projects.jp}
       </h1>
@@ -15,7 +16,7 @@ function Projects() {
           return <Project key={project.title} project={project} />
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 

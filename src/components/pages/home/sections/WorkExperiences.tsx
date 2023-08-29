@@ -1,3 +1,4 @@
+import Section from '@/components/UI/Section'
 import WorkExperience from '@/components/UI/WorkExperience'
 import { contents } from '@/const/contents'
 import { workExperience } from '@/const/workExperience'
@@ -5,7 +6,7 @@ import React from 'react'
 
 function WorkExperiences() {
   return (
-    <section id='workExperience' className='mb-40 pt-[80px] mt-[-80px]'>
+    <Section id='workExperience'>
       <h1 className='text-2xl font-decol font-bold mb-2'>
         {contents.workExperience.jp}
       </h1>
@@ -21,7 +22,7 @@ function WorkExperiences() {
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 

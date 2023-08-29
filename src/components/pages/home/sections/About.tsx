@@ -3,10 +3,11 @@ import Image from 'next/image'
 import { aboutMe, profilePic } from '@/const/aboutMe'
 import { contents } from '@/const/contents'
 import Skills from '@/components/UI/Skills'
+import Section from '@/components/UI/Section'
 
 function About() {
   return (
-    <section className='mb-40 font-zen pt-[80px] mt-[-80px]' id='aboutMe'>
+    <Section id='aboutMe'>
       <h1 className='text-2xl font-decol font-bold mb-2'>
         {contents.aboutMe.jp}
       </h1>
@@ -29,7 +30,7 @@ function About() {
           <Skills />
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

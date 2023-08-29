@@ -1,3 +1,4 @@
+import Section from '@/components/UI/Section'
 import SnsIcons from '@/components/UI/SnsIcons'
 import { contactText } from '@/const/contactText'
 import { contents } from '@/const/contents'
@@ -6,7 +7,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section id='contact' className='pt-[80px] mt-[-80px]'>
+    <Section id='contact'>
       <h1 className='text-2xl font-decol font-bold mb-2'>
         {contents.contact.jp}
       </h1>
@@ -20,7 +21,7 @@ function Contact() {
         </p>
         <SnsIcons />
       </div>
-    </section>
+    </Section>
   )
 }
 
