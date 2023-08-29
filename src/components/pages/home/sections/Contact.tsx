@@ -1,4 +1,5 @@
 import Section from '@/components/UI/Section'
+import SectionTitle from '@/components/UI/SectionTitle'
 import SnsIcons from '@/components/UI/SnsIcons'
 import { contactText } from '@/const/contactText'
 import { contents } from '@/const/contents'
@@ -8,10 +9,7 @@ import React from 'react'
 function Contact() {
   return (
     <Section id='contact'>
-      <h1 className='text-2xl font-decol font-bold mb-2'>
-        {contents.contact.jp}
-      </h1>
-
+      <SectionTitle title={contents.contact.jp} />
       <div>
         <p className='mb-3'>
           <Link className='font-bold' href={`mailto:${contactText.link.email}`}>

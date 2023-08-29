@@ -4,14 +4,12 @@ import { aboutMe, profilePic } from '@/const/aboutMe'
 import { contents } from '@/const/contents'
 import Skills from '@/components/UI/Skills'
 import Section from '@/components/UI/Section'
+import SectionTitle from '@/components/UI/SectionTitle'
 
 function About() {
   return (
     <Section id='aboutMe'>
-      <h1 className='text-2xl font-decol font-bold mb-2'>
-        {contents.aboutMe.jp}
-      </h1>
-
+      <SectionTitle title={contents.aboutMe.jp} />
       <div className='clearfix lg:flex lg:flex-row-reverse lg:gap-[74px]'>
         <div
           style={{ shapeOutside: 'circle()', clipPath: 'circle()' }}
