@@ -14,7 +14,7 @@ function Home() {
         id='home'
       >
         <div className='col-2-auto grid grid-cols-inner grid-flow-dense'>
-          <div className='col-start-1 col-end-13'>
+          <div className='relative col-start-1 col-end-13'>
             <Header />
             <main className='my-20 mx-auto max-w-[75rem] w-full'>
               <div className='relative w-full max-w-[80rem] my-[0px] mx-auto'>
