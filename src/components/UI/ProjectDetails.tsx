@@ -3,6 +3,7 @@ import React from 'react'
 import { BsGithub } from 'react-icons/bs'
 import { AiOutlineLink } from 'react-icons/ai'
 import { ProjectListProps } from '@/types/projectTypes'
+import Skills from './SkillIconsSet'
 
 function ProjectDetails({ project }: { project: ProjectListProps }) {
   return (
@@ -30,15 +31,7 @@ function ProjectDetails({ project }: { project: ProjectListProps }) {
       </div>
       <div className='flex gap-2 mt-2 mb-5 flex-wrap'>
         {project.skills.map((skill: string, index: number) => {
-          return (
-            <div
-              key={index}
-              className='w-fit rounded-full flex items-center justify-center 
-            text-md shadow-md text-black border border-white bg-white/20'
-            >
-              <p className='px-2'>{skill}</p>
-            </div>
-          )
+          return <Skills key={index} name={skill} className='font-thin' />
         })}
       </div>
     </div>

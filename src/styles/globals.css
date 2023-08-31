@@ -7,31 +7,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
-}
-
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  font-family: 'Zen Kaku Gothic New', 'sans-serif';
+  font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
   border: 0px solid;
+}
+
+.slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  position: absolute;
+  top: 50%;
+}
+.slick-slider .slick-prev {
+  left: 19%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.slick-slider .slick-next {
+  right: 19%;
+  z-index: 1;
+  transform: translateX(50%);
+}
+
+.slick-arrow::before {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.62);
+}
+
+.slick-slide {
+  filter: brightness(0.5);
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+
+.slick-center {
+  filter: brightness(1);
+  transform: scale(1);
 }

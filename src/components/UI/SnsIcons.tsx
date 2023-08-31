@@ -1,12 +1,10 @@
 import React from 'react'
 import SnsIcon from './SnsIcon'
-import { SiWantedly } from 'react-icons/si'
-import { BsGithub } from 'react-icons/bs'
-import { MdEmail } from 'react-icons/md'
 import { hoverFlowClass } from './NavbarContents'
+import { snsIcons } from '@/const/snsIcons'
 
 function SnsIcons({
-  showOrHiddenClassName,
+  showOrHiddenClassName = '',
 }: {
   showOrHiddenClassName?: string
 }) {
@@ -14,29 +12,15 @@ function SnsIcons({
     <ul
       className={`${showOrHiddenClassName} flex items-center justify-start gap-[1.2rem] mr-3`}
     >
-      <li className={hoverFlowClass}>
-        <SnsIcon
-          svgIcon={<BsGithub size={25} />}
-          snsName='GitHub'
-          url='https://github.com/michiru-dev'
-        />
-      </li>
-
-      <li className={hoverFlowClass}>
-        <SnsIcon
-          svgIcon={<SiWantedly size={25} />}
-          snsName='Wantedly'
-          url='https://www.wantedly.com/id/michiru_dev'
-        />
-      </li>
-
-      <li className={hoverFlowClass}>
-        <SnsIcon
-          svgIcon={<MdEmail size={25} />}
-          snsName='e-mail'
-          url='mailto:since_l999@yahoo.co.jp'
-        />
-      </li>
+      {snsIcons.map((icon) => (
+        <li className={hoverFlowClass} key={icon.snsName}>
+          <SnsIcon
+            svgIcon={<icon.IconComponent size={25} />}
+            snsName={icon.snsName}
+            url={icon.url}
+          />
+        </li>
+      ))}
     </ul>
   )
 }

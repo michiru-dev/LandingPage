@@ -1,4 +1,12 @@
-export const techSkills = {
+type SkillsDetails = { name: string; icon: string }[]
+export type TechSkills = {
+  languages: SkillsDetails
+  frameworks: SkillsDetails
+  databases: SkillsDetails
+  others: SkillsDetails
+}
+
+export const techSkills: TechSkills = {
   languages: [
     { name: 'JavaScript', icon: '/techStackIcons/javascript-original.svg' },
     { name: 'TypeScript', icon: '/techStackIcons/typescript-original.svg' },
@@ -29,4 +37,4 @@ export const techSkills = {
     { name: 'GitHub', icon: '/techStackIcons/github-original.svg' },
     { name: 'Firebase', icon: '/techStackIcons/firebase-plain.svg' },
   ],
-} as const
+}
