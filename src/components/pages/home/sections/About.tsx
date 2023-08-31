@@ -8,7 +8,7 @@ import SectionTitle from '@/components/UI/SectionTitle'
 
 function About() {
   return (
-    <Section id='aboutMe'>
+    <Section id={contents.aboutMe.en}>
       <SectionTitle title={contents.aboutMe.jp} />
       <div className='lg:flex lg:flex-row-reverse lg:gap-[74px]'>
         <div

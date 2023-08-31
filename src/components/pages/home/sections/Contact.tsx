@@ -8,7 +8,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <Section id='contact'>
+    <Section id={contents.contact.en}>
       <SectionTitle title={contents.contact.jp} />
       <div>
         <p className='mb-6'>

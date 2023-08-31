@@ -46,7 +46,7 @@ function Projects() {
     </Slider>
   )
   return (
-    <Section id='projects'>
+    <Section id={contents.projects.en}>
       <SectionTitle title={contents.projects.jp} />
       <div className='flex flex-col  whitespace-nowrap '>
         {isMobile ? mobileLayout : desktopLayout}
