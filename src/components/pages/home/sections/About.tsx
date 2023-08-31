@@ -10,10 +10,10 @@ function About() {
   return (
     <Section id='aboutMe'>
       <SectionTitle title={contents.aboutMe.jp} />
-      <div className='clearfix lg:flex lg:flex-row-reverse lg:gap-[74px]'>
+      <div className='lg:flex lg:flex-row-reverse lg:gap-[74px]'>
         <div
           style={{ shapeOutside: 'circle()', clipPath: 'circle()' }}
-          className='float-none min-[425px]:float-right lg:float-none relative h-[200px] w-[200px] lg:h-[450px] lg:min-w-[450px] mb-8 lg:mb-0 ml-8'
+          className='mx-auto float-none min-[425px]:float-right lg:float-none relative h-[200px] w-[200px] lg:h-[450px] lg:min-w-[450px] mb-8 lg:mb-0 lg:ml-8'
         >
           <Image
             src={profilePic.src}

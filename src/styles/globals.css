@@ -17,3 +17,35 @@ body {
   box-sizing: border-box;
   border: 0px solid;
 }
+
+.slick-slider {
+  position: relative;
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  position: absolute;
+  top: 50%;
+}
+.slick-slider .slick-prev {
+  left: 18%;
+  z-index: 1;
+}
+.slick-slider .slick-next {
+  right: 18%;
+  z-index: 1;
+}
+
+.slick-arrow::before {
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+
+.slick-slide {
+  filter: brightness(0.5);
+}
+
+.slick-center {
+  filter: brightness(1);
+}
