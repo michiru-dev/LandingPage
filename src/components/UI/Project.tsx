@@ -10,7 +10,7 @@ function Project({ project }: { project: ProjectListProps }) {
   return (
     <div className='w-full flex justify-center'>
       <div
-        className='inline-block md:h-[630px] min-[1210px]:h-[600px] md:w-[95%] min-[1360px]:h-[580px] transition-all ease-in duration-300 cursor-pointer top-0 lg:pr-8 lg:pl-8
+        className='inline-block md:h-[630px] min-[1210px]:h-[600px] lg:min-w-full md:w-[95%] min-[1360px]:h-[580px] transition-all ease-in duration-300 cursor-pointer top-0 lg:pr-8 lg:pl-8
      mb-4 rounded-xl shadow-md border md:border-none border-white  bg-gray-300/40'
       >
         <div className='flex flex-col gap-5 lg:px-10 py-5 cursor-auto transition-all duration-200 ease-in-out'>

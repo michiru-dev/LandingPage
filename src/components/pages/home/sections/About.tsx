@@ -18,7 +18,9 @@ function About() {
           <Image
             src={profilePic.src}
             alt={profilePic.alt}
-            layout='fill'
+            fill
+            sizes='(max-width: 1023px) 200px, 450px'
+            priority={true}
             className='drop-shadow-2xl'
           />
         </div>

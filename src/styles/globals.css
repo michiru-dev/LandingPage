@@ -31,14 +31,24 @@ body {
   top: 50%;
 }
 .slick-slider .slick-prev {
-  left: 19%;
+  left: 17%;
   z-index: 1;
   transform: translateX(-50%);
 }
+
 .slick-slider .slick-next {
-  right: 19%;
+  right: 17%;
   z-index: 1;
   transform: translateX(50%);
+}
+
+@media only screen and (max-width: 1023px) {
+  .slick-slider .slick-prev {
+    left: 19%;
+  }
+  .slick-slider .slick-next {
+    right: 19%;
+  }
 }
 
 .slick-arrow::before {

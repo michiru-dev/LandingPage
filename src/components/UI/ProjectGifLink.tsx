@@ -14,7 +14,8 @@ function ProjectGifLink({ project }: { project: ProjectListProps }) {
       <Image
         src={`/${project.src}.gif`}
         alt={project.src}
-        layout='fill'
+        fill
+        sizes='(max-width: 1023px) 300px, 500px'
         className='rounded-2xl hover:shadow-lg'
       />
     </Link>
