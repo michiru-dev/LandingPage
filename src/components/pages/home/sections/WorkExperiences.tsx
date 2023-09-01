@@ -9,7 +9,7 @@ function WorkExperiences() {
   return (
     <Section id={contents.workExperience.en}>
       <SectionTitle title={contents.workExperience.jp} />
-      <div className='flex flex-col lg:flex-row justify-between font-kaisei'>
+      <div className='flex flex-col gap-10 justify-between font-kaisei'>
         {workExperience.map((ex, index) => {
           return (
             <WorkExperience

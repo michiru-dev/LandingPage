@@ -1,5 +1,5 @@
 export const workExperience = [
-  { date: '2017年3月', name: '関西学院大学経済学部 卒業' },
+  { date: '2017年3月', name: '関西学院大学 経済学部　卒業' },
   {
     date: '2017年4月',
     name: '因幡電機産業株式会社　入社',

@@ -1,9 +1,11 @@
 import { WorkExperienceType } from '@/types/workExperienceTypes'
 import React from 'react'
+import { hoverFlowClass } from './NavbarContents'
 
-const dotLineOuterDivClass = 'hidden xl:flex justify-center items-center'
+const dotLineOuterDivClass =
+  'flex justify-center items-center absolute right-[30%] py-3'
 const dotLineInnerDivClass =
-  'w-[65px] border-dotted border-t-4 border-black mx-4 h-1'
+  'h-[65px] border-dotted border-l-4 border-slate-300 mx-4 h-1'
 
 type WorkExperienceProps = {
   experience: WorkExperienceType
@@ -17,18 +19,23 @@ function WorkExperience({
   workExperience,
 }: WorkExperienceProps) {
   return (
-    <React.Fragment key={index}>
-      <div className='mb-5 lg:mb-0'>
-        <p className='border-b-[1px] w-fit font-decol'>{experience.date}</p>
-        <p> {experience.name}</p>
-        <p>{experience.moreInfo}</p>
+    <div className='relative h-[125px] w-fit'>
+      <div className='flex gap-10  items-center'>
+        <p className='font-decol w-[100px]'>{experience.date}</p>
+        <div
+          className={` ${hoverFlowClass} flex flex-col justify-center items-center border border-solid border-slate-300 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[2px] rounded-bl-[2px] w-[350px] h-[80px] p-3`}
+        >
+          <p> {experience.name}</p>
+          <p>{experience.moreInfo}</p>
+        </div>
       </div>
+
       {index !== workExperience.length - 1 && (
         <div className={dotLineOuterDivClass}>
           <div className={dotLineInnerDivClass} />
         </div>
       )}
-    </React.Fragment>
+    </div>
   )
 }
 
