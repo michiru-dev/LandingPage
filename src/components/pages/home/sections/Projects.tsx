@@ -31,11 +31,11 @@ function Projects() {
   const isMobile = useWindowSize()
 
   const mobileLayout = (
-    <>
+    <div>
       {projectsList.map((project: ProjectListProps) => (
         <Project key={project.title} project={project} />
       ))}
-    </>
+    </div>
   )
 
   const desktopLayout = (
@@ -48,9 +48,7 @@ function Projects() {
   return (
     <Section id={contents.projects.en}>
       <SectionTitle title={contents.projects.jp} />
-      <div className='flex flex-col  whitespace-nowrap '>
-        {isMobile ? mobileLayout : desktopLayout}
-      </div>
+      {isMobile ? mobileLayout : desktopLayout}
     </Section>
   )
 }
