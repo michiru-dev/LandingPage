@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div>
       <Head>
         <link rel='icon' sizes='16x16' href='/pawprint.png' />
+        <title>Michiru.I Portfolio</title>
       </Head>
       <Component {...pageProps} />
     </div>
