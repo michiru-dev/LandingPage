@@ -26,7 +26,7 @@ function WorkExperience({
       <div className={`${outerDivClass}`}>
         <div className={`${innerDivClass} font-decol`}>{experience.date}</div>
         <div
-          className={` ${hoverFlowClass}  ${nestedInnerDivClass} border border-solid border-slate-300 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[2px] rounded-bl-[2px]`}
+          className={` ${hoverFlowClass}  ${nestedInnerDivClass} bg-white/20 border border-solid border-slate-300 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[2px] rounded-bl-[2px]`}
         >
           <p> {experience.name}</p>
           <p>{experience.moreInfo}</p>
