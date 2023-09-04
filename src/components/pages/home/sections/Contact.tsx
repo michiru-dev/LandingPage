@@ -5,6 +5,7 @@ import { contactText } from '@/const/contactText'
 import { contents } from '@/const/contents'
 import Link from 'next/link'
 import React from 'react'
+import { hoverFlowClass } from '@/components/UI/NavbarContents'
 
 function Contact() {
   return (
