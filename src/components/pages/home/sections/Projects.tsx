@@ -13,7 +13,7 @@ const settings: Settings = {
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 3000,
   cssEase: 'ease-in',
   centerMode: true,
@@ -54,35 +54,3 @@ function Projects() {
 }
 
 export default Projects
-
-// function Projects() {
-//   const isMobile = useWindowSize()
-
-//   const mobileLayout = (
-//     <>
-//       {projectsList.map((project: ProjectListProps) => (
-//         <Project key={project.title} project={project} />
-//       ))}
-//     </>
-//   )
-//
-//   const desktopLayout = (
-//     <Slider {...settings}>
-//       {/* {projectsList.map((project: ProjectListProps) => (
-//         <Project key={project.title} project={project} />
-//       ))} */}
-
-//       <div className='w-[200px]'>asdfa</div>
-//       <div className='w-[200px]'>asdfa</div>
-//       <div className='w-[200px]'>asdfa</div>
-//     </Slider>
-//   )
-//   return (
-//     <Section id='projects'>
-//       <SectionTitle title={contents.projects.jp} />
-//       {/* <div className='flex flex-col  whitespace-nowrap '> */}
-//       {isMobile ? mobileLayout : desktopLayout}
-//       {/* </div> */}
-//     </Section>
-//   )
-// }
