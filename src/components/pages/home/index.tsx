@@ -9,6 +9,11 @@ import Footer from '@/components/UI/Footer'
 function Home() {
   return (
     <div>
+      <div
+        className='fixed bottom-0 z-[-99] pointer-events-none
+   flex justify-center items-center blur-[6rem] w-full h-full opacity-90
+   bg-[linear-gradient(-30deg,#ec6d6f_0%,#e8adae_19%,#eba2a37d_25%,white_63%,white_100%)]'
+      ></div>
       <section
         className='grid grid-cols-outerTb lg:grid-cols-outerPc gap-y-36'
         id='home'
