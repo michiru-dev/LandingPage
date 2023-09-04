@@ -17,7 +17,7 @@ body {
   border: 0px solid;
 }
 
-.slick-arrow {
+body .slick-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,33 +25,33 @@ body {
   width: 35px;
 }
 
-.slick-slider .slick-prev,
+body .slick-slider .slick-prev,
 .slick-slider .slick-next {
   position: absolute;
   top: 50%;
 }
-.slick-slider .slick-prev {
+body .slick-slider .slick-prev {
   left: 17%;
   z-index: 1;
   transform: translateX(-50%);
 }
 
-.slick-slider .slick-next {
+body .slick-slider .slick-next {
   right: 17%;
   z-index: 1;
   transform: translateX(50%);
 }
 
 @media only screen and (max-width: 1023px) {
-  .slick-slider .slick-prev {
+  body .slick-slider .slick-prev {
     left: 19%;
   }
-  .slick-slider .slick-next {
+  body .slick-slider .slick-next {
     right: 19%;
   }
 }
 
-.slick-arrow::before {
+body .slick-arrow::before {
   font-size: 35px;
   color: rgba(0, 0, 0, 0.62);
 }
