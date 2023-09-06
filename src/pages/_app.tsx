@@ -10,6 +10,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <link rel='icon' sizes='16x16' href='/pawprint.png' />
         <title>Michiru.I Portfolio</title>
+        <meta
+          name='description'
+          content="Michiru's portofolio. Last updated:6th September"
+        />
       </Head>
       <Component {...pageProps} />
     </div>
