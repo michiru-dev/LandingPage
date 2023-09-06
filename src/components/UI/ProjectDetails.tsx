@@ -16,6 +16,7 @@ function ProjectDetails({ project }: { project: ProjectListProps }) {
             rel='noreferrer noopener'
             target='_blank'
             className='hover:opacity-50  hover:scale-[1.2] transition-all duration-200 ease-in-out '
+            aria-label={`${project.title}のギットハブリンク`}
           >
             <BsGithub size={25} />
           </Link>
@@ -24,6 +25,7 @@ function ProjectDetails({ project }: { project: ProjectListProps }) {
             rel='noreferrer noopener'
             target='_blank'
             className='hover:opacity-50  hover:scale-[1.2] transition-all duration-200 ease-in-out'
+            aria-label={`${project.title}のデモページリンク`}
           >
             <AiOutlineLink size={25} />
           </Link>

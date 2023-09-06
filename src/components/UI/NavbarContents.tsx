@@ -25,6 +25,7 @@ function NavbarContents({
     <div className={`${divClassName}`}>
       <button
         onClick={handleClick}
+        aria-label='ページトップに戻る'
         className={`${hoverFlowClass} ml-2 hidden lg:flex`}
       >
         <FaDog className='text-xl lg:text-3xl' />
