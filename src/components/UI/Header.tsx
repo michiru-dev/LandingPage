@@ -15,7 +15,8 @@ function Header() {
         />
         <button
           onClick={toggleMenu}
-          className='lg:hidden absolute top-0 right-0 '
+          className='lg:hidden absolute top-0 right-0'
+          aria-label='メニューを開く'
         >
           <RxHamburgerMenu size={25} />
         </button>
