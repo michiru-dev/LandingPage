@@ -24,6 +24,7 @@ export const techSkills: TechSkills = {
     { name: 'React.js', icon: '/techStackIcons/react-original.svg' },
     { name: 'Next.js', icon: '/techStackIcons/nextjs-original-wordmark.svg' },
     { name: 'Redux', icon: '/techStackIcons/redux-original.svg' },
+    { name: 'TanStack Query', icon: '/techStackIcons/react-query-icon.svg' },
     { name: 'Express', icon: '/techStackIcons/express-original.svg' },
   ],
 
