@@ -10,7 +10,7 @@ export const projectsList = [
   {
     title: '人事管理アプリ',
     skills: ['React.js', 'Redux', 'SCSS', 'Cloud Firestore'],
-    description: `React.jsで実装した人事管理アプリです。社員情報を登録、閲覧、検索、編集できます。\nデータの管理はReduxおよびCloud Firestoreを使い実装しています。また、Cloud Firestoreの代わりにMySQLを使い書き換えたバージョンも<a class='font-bold' rel='noreferrer noopener' target='_blank' href='https://github.com/michiru-dev/HR-App-MySQL'>こちら</a>に置いています。（未デプロイ）\nダミーデータを登録しているので、自由に追加や編集等行ってください。`,
+    description: `React.jsで実装した人事管理アプリです。社員情報を登録、閲覧、検索、編集できます。\nデータの管理はReduxおよびCloud Firestoreを使い実装しています。また、Redux、Firestoreの代わりにTanStack Query、MySQLを使い書き換えたバージョンも<a class='font-bold' rel='noreferrer noopener' target='_blank' href='https://github.com/michiru-dev/HR-App-TanstackQuery'>こちら</a>に置いています。（未デプロイ）\nダミーデータを登録しているので、自由に追加や編集等行ってください。`,
     src: 'hrapp社員検索',
     url: 'https://hr-app-nu.vercel.app/',
     repoUrl: 'https://github.com/michiru-dev/HR-App-Cloud-FireStore',
